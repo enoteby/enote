@@ -322,6 +322,9 @@ a img {
   margin-right: 15px;
 }
 
+.formV {
+      font-family: 'Roboto', sans-serif;
+}
 
 .section {
 
@@ -369,11 +372,14 @@ img{
 
 
 }
-.menu-btn span:hover {
+.menu-btn span {
   animation: lexprofitBoundingAnim 1s linear infinite;
 
 }
+.menu-btn span:hover {
+  animation: lexprofitBoundingAnim 0s linear infinite;
 
+}
 @keyframes lexprofitBoundingAnim {
   0%{
     transform: rotate(0deg);
@@ -413,28 +419,29 @@ img{
   font-size: 20px;
 }
 .menu-nav {
-  transition: 0.2s;
+  transition: 0.1s;
   transform: scaleY(0) translateY(0%);
   transform-origin: bottom;
-  opacity: 0.;
+  opacity: .0;
   visibility: hidden;
  
   width: 60px;
   line-height: 60px;
   background-color: #fff;
   text-align: right;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+   margin-bottom: 30px;
   margin-right: -60px;
 
 
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px 50px 0px 0px;
 }
 .menu-nav_active {
   transform: scaleY(1) translateY(0%);
   opacity: 1;
   visibility: visible;
   
-
 }
 
 
